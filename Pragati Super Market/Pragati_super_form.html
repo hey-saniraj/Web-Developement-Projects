@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati Super Market Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">  -->
+    <style>
+        h1{
+            color:rgb(12,12,224);
+            /* font-family:  'Times New Roman', Times, serif; */
+            font-size: 40px;
+        }
+        #submit{
+            background-color: rgb(194, 18, 18);
+            color: white;
+            border-radius: 05px;
+        }
+        #reset{
+            background: rgb(145, 30, 110);
+            color: white;
+            border-radius: 05px;
+        }
+        
+         
+    </style>
+</head>
+ 
+<body>
+    <h1>PRAGATI SUPER MARKET</h1>
+    <form action="backend.php"> 
+    <div>
+        <img src="pragati super market.jpg" height="100" width="300" alt="pragati super market">
+    </div><br>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="myname" id="name">
+    </div><br>
+    <div>
+        <label for="d.o.b">Date of Birth</label>
+        <input type="date" name="d.o.b" id="d.o.b">
+    </div><br>
+    <div>
+        <label for="myemail">Email</label>
+        <input type="email" name="myemail" id="myemail">
+    </div><br>
+    <div>
+        <label for="number">Mobile Number</label>
+        <input type="number" name="number" id="number">
+    </div><br>
+    <div>
+        Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Other <input
+            type="radio" name="mygender">
+    </div><br>
+    <div>
+        <label for="address">Address</label>
+       <br> <textarea name="address" id="address" cols="20" rows="5"></textarea>
+    </div><br>
+    <div>
+        <label for="expertise">Expertise</label>
+        <select name="expertise" id="expertise" >
+            <option value="Marketing Expert">Marketing Expert</option>
+            <option value="computer Expert">computer Expert</option>
+            <option value="experienced seller">experienced seller</option>
+        </select>
+    </div><br>
+    <div>
+        <input type="submit" value="Submit" id="submit">
+        <input type="Reset" value="Reset Now" id="reset">
+    </div>
+   </form>
+
+</body>
+
+</html>
